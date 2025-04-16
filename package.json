@@ -1,0 +1,22 @@
+{
+  "name": "Serenium",
+  "type": "module",
+  "scripts": {
+    "open-allure": "./node_modules/.bin/allure generate ./allure-reports  --clean && allure open",
+    "test": "npx wdio run ./wdio.conf.js"
+  },
+  "devDependencies": {
+    "@wdio/allure-reporter": "^9.12.3",
+    "@wdio/cli": "^9.12.4",
+    "@wdio/cucumber-framework": "^9.12.3",
+    "@wdio/dot-reporter": "^9.12.3",
+    "@wdio/junit-reporter": "^9.12.3",
+    "@wdio/local-runner": "^9.12.4",
+    "@wdio/spec-reporter": "^9.12.3",
+    "@wdio/visual-service": "^6.4.0",
+    "wdio-cucumberjs-json-reporter": "^6.0.1"
+  },
+  "dependencies": {
+    "allure-commandline": "^2.33.0"
+  }
+}
